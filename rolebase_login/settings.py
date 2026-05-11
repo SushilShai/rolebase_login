@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-#-((2aur@8vpt=i5kgxj=r(j%(rdx)64t#r4ib$l7pb#k6i1z)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','hp40mqrp-8000.inc1.devtunnels.ms']
 CORS_ORIGIN_ALLOW_ALL = True
 
 
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     # jwt authentication app
     'rest_framework_simplejwt',
     'rest_framework',
@@ -84,6 +85,7 @@ SIMPLE_JWT = {
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware', 
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
