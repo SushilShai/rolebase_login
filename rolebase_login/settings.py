@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#-((2aur@8vpt=i5kgxj=r(j%(rdx)64t#r4ib$l7pb#k6i1z)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost','127.0.0.1','rolebaselogin-production.up.railway.app']
 CORS_ORIGIN_ALLOW_ALL = True
