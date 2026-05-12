@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-#-((2aur@8vpt=i5kgxj=r(j%(rdx)64t#r4ib$l7pb#k6i1z)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1','hp40mqrp-8000.inc1.devtunnels.ms']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','rolebaselogin-production.up.railway.app']
 CORS_ORIGIN_ALLOW_ALL = True
 
 
